@@ -18,7 +18,7 @@ categories: [
 
 ## Intro
 
-<img src="https://raw.githubusercontent.com/ben-my-to/website/main/static/images/game.png" alt="game">
+<img src="https://raw.githubusercontent.com/jasonduong11/website/main/static/images/game.png" alt="game">
 
 My first gaming console was the _Nintendo DS_, and one of my nostalgic games, besides _Pokémon_, was [_Spectrobes - Beyond the Portal_](https://spectrobes.fandom.com/wiki/Spectrobes_Beyond_the_Portals).
 The game features mechanics similar to _Pokémon_, with a collection of spectrobes. What differentiates them is their combat system. _Pokémon_ is turn-based, while _Spectrobes - Beyond the Portal_ is third-person.
@@ -69,7 +69,7 @@ Overlays are loaded during run-time when needed. Information about overlays, inc
 
 To find the correct loaded overlay, we first need to find the _static_ memory address for the mineral's HP. Then, check if an overlay's base address is less than what you found. Lastly, go to the memory address and verify the bytes match.
 
-![search1](https://raw.githubusercontent.com/ben-my-to/website/main/static/images/search1.png) ![search2](https://raw.githubusercontent.com/ben-my-to/website/main/static/images/search2.png) ![search3](https://raw.githubusercontent.com/ben-my-to/website/main/static/images/search3.png)
+![search1](https://raw.githubusercontent.com/jasonduong11/website/main/static/images/search1.png) ![search2](https://raw.githubusercontent.com/jasonduong11/website/main/static/images/search2.png) ![search3](https://raw.githubusercontent.com/jasonduong11/website/main/static/images/search3.png)
 
 >There appears to be a _bug_ from the Desmume build on Linux while using the [GNU ARM Embedded Toolchain](https://developer.arm.com/downloads/-/gnu-rm) where when you try to set a watchpoint `watch *(int*)0x22301f0`, the process produces a segmentation fault.
 
@@ -86,18 +86,18 @@ $ hexdump -C y9.bin | grep -m 1 '33 00 00 00'
 
 Since we know where the minerals HP's memory address is, we can set a _write breakpoint_ at  `0x22301f0`. Effectively, the program will stop when a new value is re-assigned to that address.
 
-![breakpoint](https://raw.githubusercontent.com/ben-my-to/website/main/static/images/breakpoint.png)
+![breakpoint](https://raw.githubusercontent.com/jasonduong11/website/main/static/images/breakpoint.png)
 
 To find what instructions changed the value at `0x22301f0`, we must _disassemble_ it.
 
 - Tools > Disassembler > ARM9 Disassembler
 - Go to the `PC` register's address
 
-![disassemble](https://raw.githubusercontent.com/ben-my-to/website/main/static/images/disassemble.png)
+![disassemble](https://raw.githubusercontent.com/jasonduong11/website/main/static/images/disassemble.png)
 
 Let us hop into _Ghidra_.
 
-![ghidra](https://raw.githubusercontent.com/ben-my-to/website/main/static/images/ghidra.png)
+![ghidra](https://raw.githubusercontent.com/jasonduong11/website/main/static/images/ghidra.png)
 
 1. Create a New Project
     - File > New Project... (Ctrl+N) > Non-Shared Project > Choose Project Directory and Name
