@@ -119,7 +119,7 @@ As a decision tree grows deeper, overfitting becomes evident because predictions
 Pre-and-post-pruning techniques are some solutions to reduce the likelihood of an overfitted decision tree. Pre-pruning techniques introduce early stopping criteria (e.g., `max_depth`, `min_samples_split` hyperparameters). In conjunction, validation methodologies such as $k$-fold Cross-Validation can be applied select optimal values for such hyperparameters.
 
 <figure class="image">
-<img src="https://raw.githubusercontent.com/jasonduong11/website/main/static/images/iris_decision_tree.png" alt="Decision Boundary Example" style="width:70%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://raw.githubusercontent.com/jasonduong11/portme/main/static/images/iris_decision_tree.png" alt="Decision Boundary Example" style="width:70%;display:block;margin-left:auto;margin-right:auto;">
   <figcaption>Fig. 2: Decision Boundaries on the Iris Dataset</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ Pre-and-post-pruning techniques are some solutions to reduce the likelihood of a
 Figure 3 below shows a plot of the number of training samples versus the time taken _(ms)_ to train four decision tree classifiers _(one sequential and three in-parallel)_. All decision tree classifiers were trained with the same examples, sampled over a uniform distribution, across all iterations. Our experiment yields an average speedup of $\bar{S}=1.7$.
 
 <figure class="image">
-<img src="https://raw.githubusercontent.com/jasonduong11/website/main/static/images/parallel_exec_time.png" alt="Parallel Execution Time" style="width:45%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://raw.githubusercontent.com/jasonduong11/portme/main/static/images/parallel_exec_time.png" alt="Parallel Execution Time" style="width:45%;display:block;margin-left:auto;margin-right:auto;">
   <figcaption>Fig. 3: Parallel Execution Times</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ Proof.
 __Definition 1__ constructs a full $n$-nary communicator tree $\mathcal{M}$  _(each node has 0 or $n$ children)_ of height $h=\lceil\log_n k\rceil + 1$. Assume $\mathcal{T}\supseteq\mathcal{M}$. Then, for each $m\in\mathcal{M}$ subject to $|m|\ge 2$, processors must exchange $k=|m|$ messages for a total of $k^2$ messages through the `MPI.allgather` function. As such, each process obtains a sub-tree computed by every other process.
 
 <figure class="image">
-<img src="https://raw.githubusercontent.com/jasonduong11/website/main/static/images/message_complexity.png" alt="Message Exchanges" style="width:55%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://raw.githubusercontent.com/jasonduong11/portme/main/static/images/message_complexity.png" alt="Message Exchanges" style="width:55%;display:block;margin-left:auto;margin-right:auto;">
   <figcaption>Fig. 4: Communication Costs for Binary Trees</figcaption>
 </figure>
 
