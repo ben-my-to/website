@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reverse Enginnering on Jason Duong</title>
-    <link>http://localhost:1313/hugo-texify3/categories/reverse-enginnering/</link>
+    <link>https://michaelneuper.github.io/hugo-texify3/categories/reverse-enginnering/</link>
     <description>Recent content in Reverse Enginnering on Jason Duong</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>duongjason11@gmail.com (Jason Duong)</managingEditor>
     <webMaster>duongjason11@gmail.com (Jason Duong)</webMaster>
-    <lastBuildDate>Sun, 08 Dec 2024 20:56:02 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/hugo-texify3/categories/reverse-enginnering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jan 2025 03:58:17 -0800</lastBuildDate>
+    <atom:link href="https://michaelneuper.github.io/hugo-texify3/categories/reverse-enginnering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nintendo DS Reverse Engineering</title>
-      <link>http://localhost:1313/hugo-texify3/posts/nds-reverse-engineering/</link>
+      <link>https://michaelneuper.github.io/hugo-texify3/posts/nds-reverse-engineering/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate><author>duongjason11@gmail.com (Jason Duong)</author>
-      <guid>http://localhost:1313/hugo-texify3/posts/nds-reverse-engineering/</guid>
+      <guid>https://michaelneuper.github.io/hugo-texify3/posts/nds-reverse-engineering/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;I do not support piracy. What I provide in this article is entirely for &lt;strong&gt;educational purposes&lt;/strong&gt; only.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/jasonduong11/portme/main/static/images/game.png&#34; alt=&#34;game&#34;&gt;&#xA;&lt;p&gt;My first gaming console was the &lt;em&gt;Nintendo DS&lt;/em&gt;, and one of my nostalgic games, besides &lt;em&gt;Pokémon&lt;/em&gt;, was &lt;a href=&#34;https://spectrobes.fandom.com/wiki/Spectrobes_Beyond_the_Portals&#34;&gt;&lt;em&gt;Spectrobes - Beyond the Portal&lt;/em&gt;&lt;/a&gt;.&#xA;The game features mechanics similar to &lt;em&gt;Pokémon&lt;/em&gt;, with a collection of spectrobes. What differentiates them is their combat system. &lt;em&gt;Pokémon&lt;/em&gt; is turn-based, while &lt;em&gt;Spectrobes - Beyond the Portal&lt;/em&gt; is third-person.&lt;/p&gt;&#xA;&lt;p&gt;As with &lt;em&gt;Pokémon&lt;/em&gt;, spectrobes level up through experience points (XP) through battling; however, most of their XP&amp;rsquo;s come from &lt;em&gt;minerals&lt;/em&gt;. Spectrobes gain more XP if fed minerals of their type and larger size. Anyone who has played this game knows the struggle of farming/grinding minerals (especially during the swamp area).&lt;/p&gt;</description>
     </item>
   </channel>
